@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Apr 2020 pada 07.17
+-- Waktu pembuatan: 15 Apr 2020 pada 09.29
 -- Versi server: 10.1.30-MariaDB
 -- Versi PHP: 7.2.2
 
@@ -30,9 +30,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `akun` (
   `iduser` varchar(32) NOT NULL,
-  `nama` varchar(64) NOT NULL,
-  `password` varchar(64) NOT NULL,
-  `status` varchar(15) NOT NULL
+  `nama` varchar(64) DEFAULT NULL,
+  `password` varchar(64) DEFAULT NULL,
+  `status` varchar(15) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -51,9 +51,9 @@ INSERT INTO `akun` (`iduser`, `nama`, `password`, `status`) VALUES
 --
 
 CREATE TABLE `dosen` (
-  `id_dosen` int(11) NOT NULL,
-  `dosen` varchar(41) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `id_dosen` int(10) NOT NULL,
+  `dosen` varchar(64) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `dosen`
@@ -72,20 +72,7 @@ INSERT INTO `dosen` (`id_dosen`, `dosen`) VALUES
 (10, 'Dania Eridani, S.T., M.Eng.'),
 (11, 'Yudi Eko Windarto, S.T., M.Kom.'),
 (12, 'Risma Septiana, S.T., M.Eng.'),
-(13, 'Kuntoro Adi Nugroho, S.T., M.Eng.'),
-(14, 'Dr. R. Rizal Isnanto, S.T., M.M., M'),
-(15, 'Dr. Adian Fatchur Rochim, S.T., M.T.'),
-(16, 'Agung Budi Prasetijo, S.T., M.I.T., '),
-(17, 'Rinta Krida Lukmana, S.., M.T.'),
-(18, 'Dr. Oky Dwi Nurhayati, S.T., M.T.'),
-(19, 'Eko Didik Widianto, S.T., M.T.'),
-(20, 'Kurniawan Teguh Martono, S.T., M.T.'),
-(21, 'Ike Pertiwi Windasari, S.T., M.T.'),
-(22, 'Adnan Fauzi, S.T., M.Kom.'),
-(23, 'Dania Eridani, S.T., M.Eng.'),
-(24, 'Yudi Eko Windarto, S.T., M.Kom.'),
-(25, 'Risma Septiana, S.T., M.Eng.'),
-(26, 'Kuntoro Adi Nugroho, S.T., M.Eng.');
+(13, 'Kuntoro Adi Nugroho, S.T., M.Eng.');
 
 -- --------------------------------------------------------
 
@@ -94,15 +81,24 @@ INSERT INTO `dosen` (`id_dosen`, `dosen`) VALUES
 --
 
 CREATE TABLE `form` (
-  `id_form` int(10) NOT NULL,
-  `id_mhs` varchar(32) NOT NULL,
-  `nama` varchar(64) NOT NULL,
-  `smt` varchar(15) NOT NULL,
-  `dosen` varchar(64) NOT NULL,
-  `matkul` varchar(64) NOT NULL,
-  `total_nilai` varchar(32) NOT NULL,
-  `teks` text NOT NULL
+  `id_form` int(32) NOT NULL,
+  `id_mhs` varchar(32) DEFAULT NULL,
+  `nama` varchar(64) DEFAULT NULL,
+  `smt` varchar(20) DEFAULT NULL,
+  `dosen` varchar(64) DEFAULT NULL,
+  `matkul` varchar(64) DEFAULT NULL,
+  `total_nilai` varchar(32) DEFAULT NULL,
+  `teks` text
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `form`
+--
+
+INSERT INTO `form` (`id_form`, `id_mhs`, `nama`, `smt`, `dosen`, `matkul`, `total_nilai`, `teks`) VALUES
+(1, '21120117120024', 'Dwi Supardiyono', 'Semester', 'Rinta Krida Lukmana, S.., M.T.', 'Sistem Digital', '50', 'AaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'),
+(2, '21120117120024', 'Dwi Supardiyono', 'Semester', 'Ike', 'Algoritma dan Pemrograman', '50', 'asdasddsadsAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'),
+(3, '21120117120024', 'Dwi Supardiyono', 'Semester', 'Ike', 'Elektronika Dasar', 'sadsadas', 'asdasdadsmessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessage');
 
 -- --------------------------------------------------------
 
@@ -112,8 +108,8 @@ CREATE TABLE `form` (
 
 CREATE TABLE `matkul` (
   `id_matkul` int(10) NOT NULL,
-  `matkul` varchar(52) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `matkul` varchar(64) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `matkul`
@@ -220,8 +216,8 @@ INSERT INTO `matkul` (`id_matkul`, `matkul`) VALUES
 
 CREATE TABLE `nilai` (
   `id_nilai` int(10) NOT NULL,
-  `nilai` int(1) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `nilai` int(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data untuk tabel `nilai`
@@ -241,8 +237,8 @@ INSERT INTO `nilai` (`id_nilai`, `nilai`) VALUES
 --
 
 CREATE TABLE `semester` (
-  `id_smt` int(11) NOT NULL,
-  `semester` varchar(15) NOT NULL
+  `id_smt` int(10) NOT NULL,
+  `semester` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -313,13 +309,13 @@ ALTER TABLE `semester`
 -- AUTO_INCREMENT untuk tabel `dosen`
 --
 ALTER TABLE `dosen`
-  MODIFY `id_dosen` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id_dosen` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT untuk tabel `form`
 --
 ALTER TABLE `form`
-  MODIFY `id_form` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_form` int(32) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `matkul`
@@ -337,7 +333,7 @@ ALTER TABLE `nilai`
 -- AUTO_INCREMENT untuk tabel `semester`
 --
 ALTER TABLE `semester`
-  MODIFY `id_smt` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_smt` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

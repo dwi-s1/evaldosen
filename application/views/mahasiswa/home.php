@@ -74,12 +74,12 @@
 					<h3>Semester</h3>
 							<div class="12u$">
 								<div class="select-wrapper">
-									<select name="semester" id="semester">
+									<select name="smt" id="smt">
 										<option>- Semester -</option>
 										<?php
-											foreach ($semester->result() as $baris) {
+											foreach ($smt->result() as $baris) {
 									
-												echo "<option value=".$baris->id_smt.">".$baris->semester."</option>";
+												echo "<option value=".$baris->semester.">".$baris->semester."</option>";
 											}
 										?>
 									</select>

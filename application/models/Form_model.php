@@ -33,7 +33,7 @@ class Form_model extends CI_Model
 		$data = array(
 		 'id_mhs' => $this->input->post('nim'),
 		 'nama' => $this->input->post('nama'),
-		 'smt' => $this->input->post('semester'),
+		 'smt' => $this->input->post('smt'),
 		 'dosen' => $this->input->post('dosen'),
 		 'matkul' => $this->input->post('matkul'),
 		 'total_nilai' => $this->input->post('totalnilai'),

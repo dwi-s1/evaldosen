@@ -23,7 +23,7 @@ class Home extends CI_Controller {
         // load view mahasiswa/home.php
         //$this->load->view("mahasiswa/home");
 
-        $data['semester'] = $this->Form_model->tampil_semester();
+        $data['smt'] = $this->Form_model->tampil_semester();
         $data['dosen'] = $this->Form_model->tampil_dosen();
         $data['matkul'] = $this->Form_model->tampil_matkul();
         $data['nilai'] = $this->Form_model->tampil_nilai();
@@ -39,13 +39,13 @@ class Home extends CI_Controller {
 
     public function form_isi()
     {
-        $this->form_validation->set_rules('nim', 'Nim', 'required');
-        $this->form_validation->set_rules('nama', 'Nama', 'required');
-        $this->form_validation->set_rules('semester', 'Semester', 'required');
-        $this->form_validation->set_rules('dosen', 'Dosen', 'required');
-        $this->form_validation->set_rules('matkul', 'Matkul', 'required');
-        $this->form_validation->set_rules('totalnilai', 'Total Nilai', 'required');
-        $this->form_validation->set_rules('message', 'Message', 'required');
+        $this->form_validation->set_rules('nim', 'nim', 'required');
+        $this->form_validation->set_rules('nama', 'nama', 'required');
+        $this->form_validation->set_rules('smt', 'smt', 'required');
+        $this->form_validation->set_rules('dosen', 'dosen', 'required');
+        $this->form_validation->set_rules('matkul', 'matkul', 'required');
+        $this->form_validation->set_rules('totalnilai', 'totalnilai', 'required');
+        $this->form_validation->set_rules('message', 'message', 'required');
 
         if($this->form_validation->run() === FALSE){
         //    $data['error'] = '<div class="alert alert-danger" style="margin-top: 3px">
