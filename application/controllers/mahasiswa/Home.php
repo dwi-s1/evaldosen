@@ -51,8 +51,8 @@ class Home extends CI_Controller {
         //    $data['error'] = '<div class="alert alert-danger" style="margin-top: 3px">
         //                <div class="header"><b><i class="fa fa-exclamation-circle"></i> ERROR! </b> Pastikan Anda Mengisi Form dengan Benar</div></div>';
         //            $this->load->view('mahasiswa/home', $data);
-            //$this->load->view('mahasiswa', $data);
             $this->session->set_flashdata('gagal_isi_form', 'Pastikan anda mengisi form dengan benar');
+            //$this->load->view('mahasiswa/home');
             redirect('mahasiswa');
         } else {
             //$this->form_validation->run() === TRUE;
