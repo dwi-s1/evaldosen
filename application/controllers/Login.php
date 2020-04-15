@@ -10,6 +10,7 @@ class Login extends CI_Controller {
         $this->load->library('form_validation');
         //load model login_model
         $this->load->model('Login_model');
+        
     }
 
     public function index()
