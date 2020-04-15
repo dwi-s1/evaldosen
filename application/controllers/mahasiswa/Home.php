@@ -28,7 +28,7 @@ class Home extends CI_Controller {
         $data['matkul'] = $this->Form_model->tampil_matkul();
         $data['nilai'] = $this->Form_model->tampil_nilai();
         $this->load->view('mahasiswa/home', $data);
-        
+
 	}
 
     public function logout()

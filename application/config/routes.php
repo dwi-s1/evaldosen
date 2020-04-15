@@ -53,8 +53,8 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['login'] = 'home/login';
+$route['login'] = 'login';
 
-$route['dosen'] = 'dosen/home';
+$route['dosen'] = 'dosen';
 
-$route['mahasiswa'] = 'mahasiswa/home';
+$route['mahasiswa'] = 'mahasiswa';

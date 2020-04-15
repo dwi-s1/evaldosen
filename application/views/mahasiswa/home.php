@@ -61,7 +61,7 @@
 						<p>Silakan isi formulir berikut</p>
 					</header>
 					
-					<form method="post" action="home/form_isi">
+					<form method="post" action="mahasiswa/home/form_isi">
 						<div class="row uniform 50%">
 					<h3>Nim</h3>
 						<div class="12u$">

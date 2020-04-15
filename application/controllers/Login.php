@@ -18,10 +18,10 @@ class Login extends CI_Controller {
             if($this->Login_model->is_logged_in())
             {
                 if($this->session->userdata("status") == "dosen"){
-                    redirect('dosen/home');
+                    redirect('dosen');
                 }
                 if($this->session->userdata("status") == "mahasiswa"){
-                    redirect('mahasiswa/home');
+                    redirect('mahasiswa');
                 }
                 //jika memang session sudah terdaftar, maka redirect ke halaman dahsboard
                 //redirect("dashboard");
@@ -63,9 +63,9 @@ class Login extends CI_Controller {
 
                         //redirect berdasarkan level user
                         if($this->session->userdata("status") == "dosen"){
-                            redirect('dosen/home');
+                            redirect('dosen');
                         }else{
-                            redirect('mahasiswa/home');
+                            redirect('mahasiswa');
                         }
 
                     }
