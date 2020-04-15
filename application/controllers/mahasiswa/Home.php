@@ -41,7 +41,7 @@ class Home extends CI_Controller {
     {
         $this->form_validation->set_rules('nim', 'Nim', 'required');
         $this->form_validation->set_rules('nama', 'Nama', 'required');
-        $this->form_validation->set_rules('semester', 'semester', 'required');
+        $this->form_validation->set_rules('semester', 'Semester', 'required');
         $this->form_validation->set_rules('dosen', 'Dosen', 'required');
         $this->form_validation->set_rules('matkul', 'Matkul', 'required');
         $this->form_validation->set_rules('totalnilai', 'Total Nilai', 'required');
