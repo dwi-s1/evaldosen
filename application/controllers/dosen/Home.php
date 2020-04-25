@@ -10,12 +10,19 @@ class Home extends CI_Controller {
         if($this->Login_model->is_role() != "dosen"){
             redirect("login");
         }
+        //load model
+        $this->load->model('Data_model');
+        $this->load->helper('url');
 	}
 
 	public function index()
 	{
+        $data['form'] = $this->Data_model->tampil_data()->result();
+        //$this->load->view('v_tampil',$data);
+        
         // load view dosen/home.php
-        $this->load->view("dosen/home");
+        $this->load->view("dosen/home",$data);
+        
 	}
 
     public function logout()
@@ -23,5 +30,7 @@ class Home extends CI_Controller {
         $this->session->sess_destroy();
         redirect('login');
     }
+
+
 
 }
