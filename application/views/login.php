@@ -15,7 +15,7 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1><strong><a href="<?php echo site_url('home');?>">Sistem Informasi Evaluasi Dosen</a></strong> </h1>
+				<h1><strong><a href="<?php echo base_url('');?>">Sistem Informasi Evaluasi Dosen</a></strong> </h1>
 				<nav id="nav">
 					<ul>
                     <!--<li><a href="#">Home</a></li>-->
@@ -33,7 +33,7 @@
 						<h2>Login</h2>
 						<p>Silakan masukan id user dan password anda</p>
 					</header>
-					<form method="post" action="<?php echo site_url('Login');?>">
+					<form method="post" action="<?php echo base_url('Login');?>">
 					<?php if(isset($error)) { echo $error; }; ?>
 						<div class="row uniform 50%">
 							<div class="6u 12u$(xsmall)">

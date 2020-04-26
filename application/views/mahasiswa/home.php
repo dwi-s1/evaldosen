@@ -19,7 +19,7 @@
 				<h1><strong><a>Sistem Informasi Evaluasi Dosen</a></strong> </h1>
 				<nav id="nav">
 					<ul>
-					<li><a href="<?php echo site_url('mahasiswa/home/logout');?>">Logout</a></li>
+					<li><a href="<?php echo base_url('mahasiswa/home/logout');?>">Logout</a></li>
 					</ul>
 				</nav>
 			</header>

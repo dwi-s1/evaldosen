@@ -30,7 +30,7 @@
 				<h2>Sistem Informasi Evaluasi Dosen</h2>
 				<p>Selamat Datang di Sistem Informasi Evaluasi Dosen <br /> Silakan Login terlebih dahulu</p>
 				<ul class="actions">
-					<li><a href="<?php echo site_url('login');?>" class="button special big">Login</a></li>
+					<li><a href="<?php echo base_url('login');?>" class="button special big">Login</a></li>
 				</ul>
 		
 			</section>
