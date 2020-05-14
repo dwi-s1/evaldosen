@@ -154,7 +154,7 @@
 										<tr>
 											<td colspan="2"></td>
 											<td>
-												Total Nilai
+												Total Nilai :
 												<div class="12u$">
 													<input type="text" name="totalnilai" id="totalnilai" value="" placeholder="Total Nilai" />
 												</div>
