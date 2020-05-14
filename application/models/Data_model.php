@@ -6,6 +6,10 @@ class Data_model extends CI_Model
 
 	function tampil_data(){
 		return $this->db->get('form');
+	}
+	
+	function tampil_pernyataan(){
+		return $this->db->get('pernyataan');
     }
     
 }

@@ -15,6 +15,10 @@ class Home extends CI_Controller {
         $this->load->model('Form_model');
         $this->load->helper('url','form');
         $this->load->library(array('form_validation','session'));
+
+        //load model
+        $this->load->model('Data_model');
+        $this->load->helper('url');
     }
 	
 
@@ -26,7 +30,11 @@ class Home extends CI_Controller {
         $data['smt'] = $this->Form_model->tampil_semester();
         $data['dosen'] = $this->Form_model->tampil_dosen();
         $data['matkul'] = $this->Form_model->tampil_matkul();
+        
+        $data['pernyataan'] = $this->Data_model->tampil_pernyataan()->result();
+        
         $data['nilai'] = $this->Form_model->tampil_nilai();
+
         $this->load->view('mahasiswa/home', $data);
 
 	}

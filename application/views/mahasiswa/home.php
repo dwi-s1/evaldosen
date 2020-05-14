@@ -113,281 +113,56 @@
 									</select>
 								</div>
 							</div>
-							<div class="6u$ 12u$(xlarge)">
+							<div class="6u$ 12u$(xlarge)">								
 								<h3>Pernyataan :</h3>
 								<h5>Keterangan Nilai : <p>Sangat Tidak Setuju 1 - 5 Sangat Setuju</p></h5>
-									<ol>
-										<h4><li>Matakuliah memiliki RPS dan aturan yang disampaikan dengan jelas pada awal kuliah</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Rencana evaluasi perkuliahan atau penilaian telah disampaikan pada awal perkuliahan</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Diberikan referensi buku-buku atau sumber referensi di awal perkuliahan</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-													<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Telah disusun dan diberikan materi kuliah untuk mahasiswa (PPT, hand-out, Buku ajar, e-book, dll)</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Kuliah atau Praktikum dilaksanakan sesuai ketentuan (minimal 12 kali)</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Kuliah atau Praktikum didukung oleh fasilitas/sarana-prasarana penunjang yang memadai</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Hasil Ujian Tengah Semester, Tugas, Ujian Akhir Semester dibuat secara transparan</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Dosen yang mengajar menggunakan istilah yang mudah dipahami</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Dosen memberikan ilustrasi keterkaitan matakuliah menggunakan ilmu dan teknologi contoh-contoh aktual</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Isi matakuliah terorganisir dengan baik</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Dosen menyampaikan materi dengan menarik</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Dosen memberikan kesempatan bertanya pada mahasiswa</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Dosen menggunakan berbagai macam metode dalam menyampaikan materi</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Dosen menggunakan media pengajaran (LCD, Papan Tulis, dll) sesuai kebutuhan</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Dosen memberikan tugas yang relevan dengan materi kuliah</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Dosen bertutur-kata yang baik selama perkuliahan</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Penampilan dosen baik sikap dan perilaku memenuhi standar kesopanan</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Dosen menyampaikan pesan moral, etika, dan disiplin</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h4><li>Dosen memulai dan mengakhiri perkuliahan sesuai dengan waktu yang telah ditentukan</li></h4>
-											<div class="12u$">
-												<div class="select-wrapper">
-													<select name="nilai" id="nilai">
-														<option>- Nilai -</option>
-														<?php
-															foreach ($nilai->result() as $baris) {
-													
-																echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
-															}
-														?>
-													</select>
-												</div>
-											</div>
-										<h3>Total Nilai</h3>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>No.</th>
+											<th>Pernyataan</th>
+											<th>Nilai</th>
+										</tr>
+									</thead>
+									<tbody>
+									<?php 
+                                                $no = 1;
+                                                foreach($pernyataan as $p){ 
+                                                ?>
+                                                <tr>
+                                                    <td><?php echo $no++ ?></td>
+                                                    <td><?php echo $p->teks_pernyataan ?></td>
+                                                    <td>
+														<div class="12u$">
+															<div class="select-wrapper">
+																<select name="nilai" id="nilai">
+																	<?php
+																		foreach ($nilai->result() as $baris) {
+																
+																			echo "<option value=".$baris->nilai.">".$baris->nilai."</option>";
+																		}
+																	?>
+																</select>
+															</div>
+														</div>
+													</td>
+                                                </tr>
+                                                <?php } ?>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="2"></td>
+											<td>
+												Total Nilai
 												<div class="12u$">
 													<input type="text" name="totalnilai" id="totalnilai" value="" placeholder="Total Nilai" />
 												</div>
-									</ol>
+											</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
 									<h3>Kritik, Saran dan Masukan</h3>
 										<div class="12u$">
 											<textarea name="message" id="message" placeholder="Ketikan Kritik, Saran dan Masukan" rows="6"></textarea>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Apr 2020 pada 09.29
+-- Waktu pembuatan: 14 Bulan Mei 2020 pada 06.41
 -- Versi server: 10.1.30-MariaDB
 -- Versi PHP: 7.2.2
 
@@ -96,9 +96,7 @@ CREATE TABLE `form` (
 --
 
 INSERT INTO `form` (`id_form`, `id_mhs`, `nama`, `smt`, `dosen`, `matkul`, `total_nilai`, `teks`) VALUES
-(1, '21120117120024', 'Dwi Supardiyono', 'Semester', 'Rinta Krida Lukmana, S.., M.T.', 'Sistem Digital', '50', 'AaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'),
-(2, '21120117120024', 'Dwi Supardiyono', 'Semester', 'Ike', 'Algoritma dan Pemrograman', '50', 'asdasddsadsAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'),
-(3, '21120117120024', 'Dwi Supardiyono', 'Semester', 'Ike', 'Elektronika Dasar', 'sadsadas', 'asdasdadsmessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessage');
+(1, '21120117120024', 'Dwi Supardiyono', 'Semester', 'Ike', 'Olahraga', '100', 'assssdasdasdasd');
 
 -- --------------------------------------------------------
 
@@ -233,6 +231,42 @@ INSERT INTO `nilai` (`id_nilai`, `nilai`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `pernyataan`
+--
+
+CREATE TABLE `pernyataan` (
+  `id_pernyataan` int(2) NOT NULL,
+  `teks_pernyataan` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data untuk tabel `pernyataan`
+--
+
+INSERT INTO `pernyataan` (`id_pernyataan`, `teks_pernyataan`) VALUES
+(1, 'Matakuliah memiliki RPS dan aturan yang disampaikan dengan jelas pada awal kuliah'),
+(2, 'Rencana evaluasi perkuliahan atau penilaian telah disampaikan pada awal perkuliahan'),
+(3, 'Diberikan referensi buku-buku atau sumber referensi di awal perkuliahan'),
+(4, 'Telah disusun dan diberikan materi kuliah untuk mahasiswa (PPT, hand-out, Buku ajar, e-book, dll)'),
+(5, 'Kuliah atau Praktikum dilaksanakan sesuai ketentuan (minimal 12 kali)'),
+(6, 'Kuliah atau Praktikum didukung oleh fasilitas/sarana-prasarana penunjang yang memadai'),
+(7, 'Hasil Ujian Tengah Semester, Tugas, Ujian Akhir Semester dibuat secara transparan'),
+(8, 'Dosen yang mengajar menggunakan istilah yang mudah dipahami'),
+(9, 'Dosen memberikan ilustrasi keterkaitan matakuliah menggunakan ilmu dan teknologi contoh-contoh aktual'),
+(10, 'Isi matakuliah terorganisir dengan baik'),
+(11, 'Dosen menyampaikan materi dengan menarik'),
+(12, 'Dosen memberikan kesempatan bertanya pada mahasiswa'),
+(13, 'Dosen menggunakan berbagai macam metode dalam menyampaikan materi'),
+(14, 'Dosen menggunakan media pengajaran (LCD, Papan Tulis, dll) sesuai kebutuhan'),
+(15, 'Dosen memberikan tugas yang relevan dengan materi kuliah'),
+(16, 'Dosen bertutur-kata yang baik selama perkuliahan'),
+(17, 'Penampilan dosen baik sikap dan perilaku memenuhi standar kesopanan'),
+(18, 'Dosen menyampaikan pesan moral, etika, dan disiplin'),
+(19, 'Dosen memulai dan mengakhiri perkuliahan sesuai dengan waktu yang telah ditentukan');
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `semester`
 --
 
@@ -296,6 +330,12 @@ ALTER TABLE `nilai`
   ADD PRIMARY KEY (`id_nilai`);
 
 --
+-- Indeks untuk tabel `pernyataan`
+--
+ALTER TABLE `pernyataan`
+  ADD PRIMARY KEY (`id_pernyataan`);
+
+--
 -- Indeks untuk tabel `semester`
 --
 ALTER TABLE `semester`
@@ -315,7 +355,7 @@ ALTER TABLE `dosen`
 -- AUTO_INCREMENT untuk tabel `form`
 --
 ALTER TABLE `form`
-  MODIFY `id_form` int(32) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_form` int(32) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `matkul`
@@ -328,6 +368,12 @@ ALTER TABLE `matkul`
 --
 ALTER TABLE `nilai`
   MODIFY `id_nilai` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT untuk tabel `pernyataan`
+--
+ALTER TABLE `pernyataan`
+  MODIFY `id_pernyataan` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT untuk tabel `semester`
