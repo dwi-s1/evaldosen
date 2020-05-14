@@ -136,7 +136,8 @@
                                                     <td>
 														<div class="12u$">
 															<div class="select-wrapper">
-																<select name="nilai" id="nilai">
+																<select name="nilai" id="nilai" onchange="findTotal()">
+																	<option value="0">- Nilai -</option>
 																	<?php
 																		foreach ($nilai->result() as $baris) {
 																
@@ -201,6 +202,19 @@
 			<script src="<?php echo base_url('assets/assets/js/skel.min.js');?>"></script>
 			<script src="<?php echo base_url('assets/assets/js/util.js');?>"></script>
 			<script src="<?php echo base_url('assets/assets/js/main.js');?>"></script>
+
+			<script type="text/javascript">
+			function findTotal(){
+				var arr = document.getElementsByName('nilai');
+				var tot=0;
+				for(var i=0;i<arr.length;i++){
+					if(parseInt(arr[i].value))
+						tot += parseInt(arr[i].value);
+				}
+				document.getElementById('totalnilai').value = tot;
+			}
+
+    		</script>
 
 	</body>
 </html>
