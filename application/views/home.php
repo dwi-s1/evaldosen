@@ -41,20 +41,21 @@
 						<div class="row 200%">
 							<div class="6u 12u$(medium)">
 								<header class="major">
-									<h2>Maecenas luctus lectus</h2>
-									<p>Perspiciatis doloremque recusandae dolor</p>
+									<h2>- Sambutan -</h2>
+									<p>sistem informasi evaluasi dosen</p> 
+									<div class="image rounded"><img src="<?php echo base_url('assets/images/pic8.gif');?>" alt="" /></div>
 								</header>
 							</div>
 							<div class="6u$ 12u$(medium)">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ea mollitia corporis id, distinctio sunt veritatis officiis dolore reprehenderit deleniti voluptatibus harum magna, doloremque alias quisquam minus, eaque. Feugiat quod, nesciunt! Iste quos ipsam, iusto sit esse.</p>
-								<p>Dolorum aspernatur maxime libero ratione quidem distinctio, placeat fugiat laborum voluptatum enim neque soluta vel sunt id ex veritatis. Labore rerum, odit sapiente, alias mollitia magnam exercitationem modi amet earum quia atque ipsum voluptas asperiores quas laboriosam.</p>
+								<p>Selamat datang pada sistem informasi evaluasi dosen. Diharapkan dengan adanya sistem informasi ini para mahasiswa dapat melakukan evaluasi terhadap dosen pada saat melakukan kegiatan perkuliahan</p>
+								<p>Sistem informasi ini dibuat agar dapat membantu kinerja pada saat melakukan kegiatan perkuliahan. Yang mana nantinya dapat dijadikan evaluasi dan dikaji kembali bagaimana sistem pengajaran yang akan diberikan kembali pada semester berikutnya</p>
 							</div>
 						</div>
 					</div>
 				</section>
 
 			<!-- Two -->
-				<section id="two" class="wrapper style2 special">
+			<!--	<section id="two" class="wrapper style2 special">
 					<div class="container">
 						<header class="major">
 							<h2>Fusce ultrices fringilla</h2>
@@ -79,37 +80,42 @@
 							<li><a href="#" class="button big">Sed vulputate</a></li>
 						</ul>
 					</div>
-				</section>
+				</section> -->
 
 			<!-- Three -->
 				<section id="three" class="wrapper style1">
 					<div class="container">
 						<header class="major special">
-							<h2>Mauris vulputate dolor</h2>
-							<p>Feugiat sed lorem ipsum magna</p>
+							<!--<h2>Informasi lebih lanjut</h2> -->
+							<p>Informasi lebih lanjut</p> 
 						</header>
 						<div class="feature-grid">
 							<div class="feature">
-								<div class="image rounded"><img src="<?php echo base_url('assets/images/pic05.jpg');?>" alt="" /></div>
+								<div class="image rounded"><img src="<?php echo base_url('assets/images/pic04.jpg');?>" alt="" /></div>
 								<div class="content">
 									<header>
-										<h4>Lorem ipsum</h4>
-										<p>Lorem ipsum dolor sit</p>
+										<h4>Address</h4>
+										<!-- <p>Lorem ipsum dolor sit</p> -->
 									</header>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur accusantium porro omnis, unde mollitia totam sit nesciunt consectetur.</p>
+									<p>Program Studi Teknik Sistem Komputer FT. Undip 
+									<br> Jl. Prof. H. Soedarto, SH Tembalang Semarang</p>
 								</div>
 							</div>
 							<div class="feature">
 								<div class="image rounded"><img src="<?php echo base_url('assets/images/pic05.jpg');?>" alt="" /></div>
 								<div class="content">
 									<header>
-										<h4>Recusandae nemo</h4>
-										<p>Ratione maiores a, commodi</p>
+										<h4>Contacts</h4>
+										<!-- <p>Ratione maiores a, commodi</p> -->
 									</header>
-									<p>Animi mollitia optio culpa expedita. Dolorem alias minima culpa repellat. Dolores, fuga maiores ut obcaecati blanditiis, at aperiam doloremque.</p>
+									<p>
+									<br>Phone: +62 24 76480609
+									<br>Contacts Person : 
+									<br>Sdr. Andi, ST
+									<br>Sdri.  Melati, AMd</p>
 								</div>
 							</div>
-							<div class="feature">
+							<!-- <div class="feature">
 								<div class="image rounded"><img src="<?php echo base_url('assets/images/pic06.jpg');?>" alt="" /></div>
 								<div class="content">
 									<header>
@@ -131,10 +137,10 @@
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> -->
 
 			<!-- Four -->
-				<section id="four" class="wrapper style3 special">
+			<!--	<section id="four" class="wrapper style3 special">
 					<div class="container">
 						<header class="major">
 							<h2>Aenean elementum ligula</h2>
@@ -144,7 +150,7 @@
 							<li><a href="#" class="button special big">Get in touch</a></li>
 						</ul>
 					</div>
-				</section>
+				</section> -->
 
 		<!-- Footer -->
 			<footer id="footer">

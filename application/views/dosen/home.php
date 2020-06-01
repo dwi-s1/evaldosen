@@ -43,7 +43,7 @@
                             <div class="sb-sidenav-menu-heading">Core</div>
                             <a class="nav-link" href="<?php echo base_url('dosen');?>">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>Dashboard</a>
-                            <div class="sb-sidenav-menu-heading">Interface</div>
+                            <!-- <div class="sb-sidenav-menu-heading">Interface</div>
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                             <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>Layouts
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div></a>
@@ -83,7 +83,7 @@
                                 Tables</a
                             >
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <div class="sb-sidenav-footer">
                         <div class="small">Logged in as:</div>
                         <?php echo $this->session->userdata("user_name") ?>
