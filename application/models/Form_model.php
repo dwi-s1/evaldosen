@@ -31,7 +31,7 @@ class Form_model extends CI_Model
 	{
 		// User data array
 		$data = array(
-		 'id_mhs' => $this->input->post('nim'),
+		 'nim' => $this->input->post('nim'),
 		 'nama' => $this->input->post('nama'),
 		 'smt' => $this->input->post('smt'),
 		 'dosen' => $this->input->post('dosen'),

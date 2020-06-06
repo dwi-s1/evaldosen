@@ -187,7 +187,7 @@
                                                 ?>
                                                 <tr>
                                                     <td><?php echo $no++ ?></td>
-                                                    <td><?php echo $f->id_mhs ?></td>
+                                                    <td><?php echo $f->nim ?></td>
                                                     <td><?php echo $f->nama ?></td>
                                                     <td><?php echo $f->smt ?></td>
                                                     <td><?php echo $f->dosen ?></td>

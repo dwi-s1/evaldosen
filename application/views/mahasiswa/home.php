@@ -79,7 +79,7 @@
 										<?php
 											foreach ($smt->result() as $baris) {
 									
-												echo "<option value=".$baris->semester.">".$baris->semester."</option>";
+												echo "<option value=".$baris->id_smt.">".$baris->semester."</option>";
 											}
 										?>
 									</select>
