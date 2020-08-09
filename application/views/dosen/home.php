@@ -161,7 +161,7 @@
                                                 <th>NIM</th>
                                                 <th>Nama</th>
                                                 <th>Semester</th>
-                                                <th>Dosem</th>
+                                                <th>Dosen</th>
                                                 <th>Mata Kuliah</th>
                                                 <th>Nilai</th>
                                                 <th>Kritik/Saran/Masukan</th>
@@ -173,7 +173,7 @@
                                                 <th>NIM</th>
                                                 <th>Nama</th>
                                                 <th>Semester</th>
-                                                <th>Dosem</th>
+                                                <th>Dosen</th>
                                                 <th>Mata Kuliah</th>
                                                 <th>Nilai</th>
                                                 <th>Kritik/Saran/Masukan</th>
